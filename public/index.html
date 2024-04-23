@@ -2,19 +2,73 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom styles for the icons */
+        .header-icons a i {
+          font-size: 24px; /* Adjust the font size as needed */
+          margin: 0 10px; /* Add some margin between icons */
+        }
+      </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Blog</title>
 </head>
 <body>
-  <h1>Welcome to Simple Blog</h1>
-  <a href="/blog">View Blog</a>
-  <form action="/new_post" method="POST">
-    <label for="title">Title:</label><br>
-    <input type="text" id="title" name="title"><br>
-    <label for="content">Content:</label><br>
-    <textarea id="content" name="content"></textarea><br>
-    <button type="submit">Create Post</button>
-  </form>
+    <div class="header">
+        <h2>See more of what's going on in my life over here -------> :)</h2>
+        <div class="header-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a> <!-- Instagram icon -->
+            <a href="#"><i class="fas fa-user"></i></a> <!-- User icon (can be replaced or removed) -->
+        </div>
+    </div>
+
+    <div class="welcome-section">
+        <h1>Welcome to A Day in the Life</h1>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>On Today's Adventures</h2>
+                <h5>I Made it through the day!!... April 2024</h5>
+                <p>Today has been a busy but productive day so far. I started with a morning workout to get energized and prepared for the day ahead. Later, I had a virtual meeting with my team to discuss upcoming projects and deadlines, which went smoothly. In the afternoon, I focused on completing tasks and solving challenges, making progress on important projects.</p>
+                <p>After my workout, I delved into work tasks and tackled some challenging projects, pushing myself to meet deadlines and deliver quality results. In the midst of the day's activities, I managed to find moments of creativity and inspiration, generating new ideas for future endeavors. As the day progressed, I remained focused and determined, staying on track with my goals and priorities.</p>
+            </div>
+            <div class="card">
+                <h2>On Today's Adventures</h2>
+                <h5>Today was Exhausting... April 2024</h5>
+                <p>Later in the day, I took a break to enjoy a delicious homemade lunch and recharge, savoring the flavors and taking a moment to relax. With renewed energy, I resumed work and continued making progress, overcoming obstacles and adapting to changing circumstances. In the evening, I plan to unwind by reading a book or watching a movie, finding solace in quiet moments of reflection and enjoyment.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>I am a passionate individual who loves embracing new challenges and learning experiences, constantly seeking growth and improvement. Through my blog, I aim to share valuable insights and perspectives, inspiring others to pursue their passions and strive for excellence. Join me on this journey of discovery and personal development!</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <p>Sharing insights and tips on productivity and personal growth, exploring strategies for success and fulfillment. Dive into topics such as time management, goal setting, and overcoming obstacles, discovering practical advice and actionable steps. Join the conversation and join the community of motivated individuals!</p>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Connect with me on social media for more updates and interactive content, stay informed about upcoming events and projects. Follow my journey and be part of a supportive network of like-minded individuals, sharing experiences and ideas. Together, we can inspire and empower each other!</p>
+            </div>
+            <!-- Post Form -->
+            <div class="card">
+                <h2>New Post</h2>
+                <form action="/submit_post" method="POST">
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="content">Content:</label><br>
+                    <textarea id="content" name="content"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
 </body>
 </html>
